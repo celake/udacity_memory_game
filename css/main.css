@@ -53,7 +53,74 @@ table {
 __________________*/
 
 body {
-	max-height: 1200px;
+	max-width: 1200px;
 	margin: auto;
-	background-color: #666666
+	font-family: courier, monospace;
+	font-size: 16px;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+#container {
+	background-color: #666666;
+	width: 100%;
+	padding: 20px 40px;
+}
+
+header {
+	display: flex;
+	justify-content: flex-start;
+	padding-bottom: 20px;
+}
+
+header img {
+	margin: auto;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+aside {
+	flex: 1;
+}
+
+section {
+	flex: 4;
+	background-color: white;
+	border: solid 1px solid red;
+	margin: 0 20px;
+}
+
+.stats {
+	background-color: white;
+	border: 1px solid red;
+	margin: 5px 20px;
+}
+
+.deck {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+.card {
+	background-color: white;
+	border: 1px solid red;
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+}
+
+footer {
+	height: 100px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
