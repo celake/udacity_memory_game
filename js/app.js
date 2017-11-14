@@ -1,7 +1,9 @@
- document.getElementById("container").style.backgroundColor = "blue";
+
+document.getElementsByClassName("card").style.backgroundColor = "#0000ff";
 
 
 
-//icon.on("click", function() {
+
+//icon[0].on("click", function() {
 //	console.log("clicked on the circle");
 //});
