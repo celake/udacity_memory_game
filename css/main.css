@@ -103,7 +103,7 @@ section {
 	margin: 5px 20px;
 }
 
-.deck {
+#deck {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -116,8 +116,11 @@ section {
 	height: 100px;
 	width: 100px;
 	margin: 10px;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-content: center;
 }
+
 
 footer {
 	height: 100px;
