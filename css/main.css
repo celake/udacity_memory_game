@@ -123,12 +123,8 @@ section {
 	justify-content: center;
 	align-content: center; 
 	overflow: hidden;
+	position: relative;
 }
-
-.cardBack {
-	text-align: center;
-}
-
 
 footer {
 	height: 100px;
@@ -136,3 +132,58 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
+
+/***  Animation styles ***
+--------------------------*/
+@keyframes myAnimation {
+	0% {border: none;}
+	75% {border: none;}
+	100%{border: 3px solid ;}
+}
+
+.flip {
+	perspective: 800px;
+	position:relative;
+}
+	
+.flip .card {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	transition-property: border;
+	transition: 0.5s;
+}
+
+.flip .card .face {
+	backface-visibility: hidden;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	transform-style: preserve-3d;
+}
+
+.flip .card .back {
+	z-index: 2;
+}	
+
+.back img {
+	backface-visibility: hidden;
+}
+
+.flip .card .front {
+	transform: rotateX(0deg); 
+} 
+
+
+/* Animation class 
+------------------*/
+
+.flip .card.theFlip {
+	transform: rotateX(-180deg);
+	border-top: 5px solid green;
+
+}
+
+
+
+
+
