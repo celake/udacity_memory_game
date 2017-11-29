@@ -1,15 +1,20 @@
-var numCards = $(".noMatch");
+var numCards = document.getElementsByClassName("noMatch");
+var numFlipped = document.getElementsByClassName("flipped");
 
 if (numCards.length > 0) {
 	$('.card').click(
 	function () {
-		console.log("I heard the click");
+		console.log(numCards.length);
 		$(this).addClass('theFlip');
-		$(this).addClass('match');
+		$(this).addClass('flipped');
 		$(this).removeClass('noMatch');
 	});
-	} else if (numCards == 0) {	
-		console.log("You have made your last click")
+
+	} else if (numCards.length == 0) {	
+
+		// you win animation goes here //
+
+		console.log("your done!!");
 }
 
 	
